@@ -111,13 +111,13 @@ a:hover {
     color: #205295;
 }
 .top-cloud {
-    width:15%;
+    width:20%;
     position:absolute;
     top:10%;
     right:20%;
 }
 .bottom-cloud {
-    width:15%;
+    width:20%;
     position: absolute;
     left:21%;
     bottom:30%;
@@ -219,7 +219,7 @@ hr {
     text-align: center
 }
 .mountain{
-    width : 60%;
+    width : 65%;
     height:auto;
 }
 
