@@ -16,7 +16,7 @@ h1 {
 }
 
 h2 {
-    color: #4AB19A;
+    color: #1E836C;
     font-family: "Montserrat", sans-serif; 
     font-size: 2.5rem;
     font-weight: normal;
@@ -24,7 +24,7 @@ h2 {
 }
 
 h3 {
-    color:#4AB19A;
+    color:#45B2A7;
 }
 .top-container {
     background-color: #E0EBE8;
@@ -101,14 +101,14 @@ span {
 }
 
 a {
-    color: #205295;
+    color: #45B2A7;
     margin: 40px 20px;
     font-family: "Montserrat", sans-serif; 
     text-decoration: none ;
 }
 
 a:hover {
-    color: #205295;
+    color: #1E836C;
 }
 .top-cloud {
     width:15%;
@@ -126,7 +126,7 @@ a:hover {
 .Typing {
     width:25%;
     
-    background-color: #205295;
+    background-color: #C5DED7;
     border-radius: 20%;
     float: right;
     margin-left: 30px;
@@ -144,21 +144,18 @@ a:hover {
 
 .left {
     width:25%;
-    background-color: #205295;
+    background-color: #C5DED7;
     border-radius: 20%;
     float: left;
     margin-right: 30px;
 }
 
-p {
-    color: #205295;
-}
 
 hr {
     width: 5%;
     border-style: none none dotted none;
     border-width: 8px;
-    border-color: #205295;
+    border-color: #C5DED7;
     margin: 100px auto 100px auto;
 }
 
@@ -204,7 +201,7 @@ hr {
 }
 
 .bottom-container {
-    background-color: #FFD7E2;
+    background-color: #C5DED7;
     padding: 50px 0 20px;
     position: relative;
     top:10px;
@@ -213,7 +210,7 @@ hr {
 
 
 .Bio {
-    color:#205295;
+    color:#45B2A7;
     font-size: 0.75rem;
     margin-top: 40px;
     text-align: center
