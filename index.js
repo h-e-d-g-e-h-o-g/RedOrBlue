@@ -1,26 +1,39 @@
-var pills = document.querySelectorAll(".pill").length;
+var pills = $(".pill").length;
 
-document.querySelectorAll('.pill')[0].addEventListener('click',function(){
+$('.pill')[0].addEventListener("click",function(){
     var file = window.open("source.html","_target");
     var enter = new Audio("MatrixSound.mp3");
     enter.play();
     setTimeout(function(){
         file.close();
         enter.pause();
-    },6000);
+    },5500);
 });
 
-document.querySelectorAll('.pill')[1].addEventListener('click',function(){
-    document.querySelector(".top-container").classList.add('myClass'); 
-    document.querySelector("h1").classList.add('myColor'); 
-    document.querySelector("h2").classList.add('myColor'); 
-    document.querySelector(".top-cloud").classList.add('top-cloud-motion');
-    document.querySelector(".bottom-cloud").classList.add('bottom-cloud-motion');
+$('.pill')[1].addEventListener("click",function(){
+    $(".top-container").addClass('myClass'); 
+    $("h1").addClass('myColor'); 
+    $("h2").addClass('myColor'); 
+    $(".top-cloud").addClass('top-cloud-motion');
+    $(".bottom-cloud").addClass('bottom-cloud-motion');
+    $("#1").addClass("firework firework1");
+    $("#2").addClass("firework firework2");
+    $("#3").addClass("firework firework3");
+    var list =  $("div div div").length;
+    for(var i=0;i<list;i++){
+        $("div div div")[i].classList.add("explosion");
+    }
+    
     setTimeout(function(){
-        document.querySelector(".top-container").classList.remove('myClass'); 
-        document.querySelector("h1").classList.remove('myColor'); 
-        document.querySelector("h2").classList.remove('myColor'); 
-        
+        $(".top-container").removeClass('myClass'); 
+        $("h1").removeClass('myColor'); 
+        $("h2").removeClass('myColor'); 
+        $("#1").removeClass("firework firework1");
+        $("#2").removeClass("firework firework2");
+        $("#3").removeClass("firework firework3");
+        for(var i=0;i<list;i++){
+            $("div div div")[i].classList.remove("explosion");
+        }
     },6000)
 });
 
