@@ -19,6 +19,8 @@ $('.pill')[1].addEventListener("click",function(){
     $("#1").addClass("firework firework1");
     $("#2").addClass("firework firework2");
     $("#3").addClass("firework firework3");
+    var crackers = new Audio("crackers.mp3");
+    crackers.play();
     var list =  $("div div div").length;
     for(var i=0;i<list;i++){
         $("div div div")[i].classList.add("explosion");
@@ -34,6 +36,7 @@ $('.pill')[1].addEventListener("click",function(){
         for(var i=0;i<list;i++){
             $("div div div")[i].classList.remove("explosion");
         }
+        crackers.pause();
     },6000)
 });
 
